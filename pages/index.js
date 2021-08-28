@@ -1,8 +1,11 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import path from 'path';
+import Link from 'next/link';
 import Layout from '../components/Layout';
 import Post from '../components/Post';
+
+import { sortByDate } from '../util';
 
 export default function HomePage({ posts }) {
   console.log(posts);
@@ -14,6 +17,11 @@ export default function HomePage({ posts }) {
           <Post key={index} post={post} />
         ))}
       </div>
+      <Link href='/blog'>
+        <a className='block text-center border border-gray-500 text-gray-800 rounded-md py-4 my-5 transition duration-500 ease select-none hover:text-white hover:bg-gray-900 focus:outline-none focus:shadow-outline w-full'>
+          All Posts
+        </a>
+      </Link>
     </Layout>
   );
 }
@@ -33,7 +41,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts,
+      posts: posts.sort(sortByDate).slice(0, 6),
     },
   };
 }
