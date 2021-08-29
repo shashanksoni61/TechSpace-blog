@@ -1,14 +1,66 @@
 import fs from 'fs';
-import matter from 'gray-matter';
 import path from 'path';
+import Link from 'next/link';
+import Image from 'next/image';
+import matter from 'gray-matter';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import ReactMarkdown from 'react-markdown';
 import Layout from '../../components/Layout';
+import CategoryLabel from '../../components/CategoryLabel';
+import { dark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+
 export default function SinglePostPage({ slug, frontMatter, content }) {
   const { title, date, category, cover_image, author, author_image } =
     frontMatter;
 
+  // const custromRenderer = {
+  //   code({ language, value }) {
+  //     return (
+  //       <SyntaxHighlighter style={dark} language={language}>
+  //         hello
+  //       </SyntaxHighlighter>
+  //     );
+  //   },
+  // };
+
   return (
     <Layout title={title}>
-      <div>Single Page</div>
+      <Link href='/blog'>
+        <a className='px-10'>Go Back</a>
+      </Link>
+      <div className='w-full px-10 py-6 lg:mx-auto bg-white shadow-md rounded-sm  '>
+        <div className='flex justify-between items-center mt-4'>
+          <h1 className='text-4xl mb-6'>{title}</h1>
+          <CategoryLabel label={category} />
+        </div>
+        {cover_image && (
+          <Image
+            src={cover_image}
+            width={820}
+            height={468}
+            quality={100}
+            alt=''
+            className='w-full rounded'
+          />
+        )}
+
+        <div className='flex justify-between items-center p-2 bg-gray-50 rounded-sm'>
+          <div className='flex items-center my-2'>
+            <img
+              src={author_image}
+              alt={author}
+              className='rounded-full w-10 '
+            />
+            <h3 className='text-sm mx-2'>{author}</h3>
+          </div>
+          <div className='mr-4 '>{date}</div>
+        </div>
+
+        <div className='blog-text'>
+          <ReactMarkdown>{content}</ReactMarkdown>
+        </div>
+      </div>
     </Layout>
   );
 }
@@ -40,5 +92,6 @@ export async function getStaticProps({ params }) {
       frontMatter,
       content,
     },
+    revalidate: 1,
   };
 }
