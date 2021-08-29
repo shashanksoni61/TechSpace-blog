@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import CategoryLabel from './CategoryLabel';
 
 export default function Post({ post }) {
   const { title, date, excerpt, cover_image, category, author, author_image } =
     post.frontMatter;
   return (
-    <div className='w-full flex flex-col px-10 py-6 bg-white rounded-lg shadow-md mt-6'>
+    <div className='w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6'>
       <Image
         src={cover_image}
         alt={title}
@@ -16,7 +17,9 @@ export default function Post({ post }) {
       <div className='flex justify-between items-center mb-2'>
         <span className='font-light text-gray-600'>{date}</span>
 
-        <div>{category}</div>
+        <div>
+          <CategoryLabel label={category} />
+        </div>
       </div>
       <div className='mt-2'>
         <Link href={`/blog/${post.slug}`}>
