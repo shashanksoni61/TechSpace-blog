@@ -6,6 +6,7 @@ import Post from '../../../components/Post';
 
 import { sortByDate } from '../../../util';
 import { POSTS_PER_PAGE, POST_PER_PAGE } from '../../../config';
+import Pagination from '../../../components/Pagination';
 
 export default function BlogPage({ posts, numPages, currentPage }) {
   return (
@@ -16,6 +17,7 @@ export default function BlogPage({ posts, numPages, currentPage }) {
           <Post key={index} post={post} />
         ))}
       </div>
+      <Pagination currentPage={currentPage} numPages={numPages} />
     </Layout>
   );
 }
@@ -40,9 +42,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const { page_index } = params;
-
-  const page = parseInt((params && page_index) || 1);
+  const page = parseInt((params && params.page_index) || 1);
 
   const files = fs.readdirSync(path.join('posts'));
 
