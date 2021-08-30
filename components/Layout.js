@@ -13,7 +13,7 @@ const Layout = ({ title, children, keywords, description }) => {
       </Head>
 
       <Header />
-      <main className='container mx-auto my-7 lg:px-60'>{children}</main>
+      <main className='container mx-auto my-7 lg:px-32'>{children}</main>
     </div>
   );
 };

@@ -3,8 +3,6 @@ import path from 'path';
 import Link from 'next/link';
 import Image from 'next/image';
 import matter from 'gray-matter';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import ReactMarkdown from 'react-markdown';
 import Layout from '../../components/Layout';
 import CategoryLabel from '../../components/CategoryLabel';
@@ -27,9 +25,11 @@ export default function SinglePostPage({ slug, frontMatter, content }) {
   return (
     <Layout title={title}>
       <Link href='/blog'>
-        <a className='px-10'>Go Back</a>
+        <a className='ml-10 bg-gray-700 text-white p-1.5 rounded mb-5'>
+          Go Back
+        </a>
       </Link>
-      <div className='w-full px-10 py-6 lg:mx-auto bg-white shadow-md rounded-sm  '>
+      <div className='w-full px-10 py-6 lg:px-56 bg-white shadow-md rounded-sm  '>
         <div className='flex justify-between items-center mt-4'>
           <h1 className='text-4xl mb-6'>{title}</h1>
           <CategoryLabel label={category} />
