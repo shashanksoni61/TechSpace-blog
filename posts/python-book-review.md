@@ -5,7 +5,7 @@ excerpt: 'In this review, we will be looking at the new Python book from Oriley'
 cover_image: '/images/posts/img6.jpg'
 category: 'Python'
 author: 'Mike Richards'
-author_image: 'https://randomuser.me/api/portraits/men/13.jpg'
+author_image: 'https://avatars.githubusercontent.com/u/17203307?s=400&u=29c7f74b68ef437111374a453389066b910f91c8&v=4'
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->

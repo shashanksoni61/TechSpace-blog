@@ -5,7 +5,7 @@ excerpt: 'In this article we will look at some of the new features offered in ve
 cover_image: '/images/posts/img4.jpg'
 category: 'PHP'
 author: 'Sara Johnson'
-author_image: 'https://randomuser.me/api/portraits/women/12.jpg'
+author_image: 'https://avatars.githubusercontent.com/u/17203307?s=400&u=29c7f74b68ef437111374a453389066b910f91c8&v=4'
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->

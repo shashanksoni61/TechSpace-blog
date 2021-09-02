@@ -5,7 +5,7 @@ excerpt: 'Crash course to learn the React. We will look at components, hooks and
 cover_image: '/images/posts/img5.jpg'
 category: 'JavaScript'
 author: 'Jane Doe'
-author_image: 'https://randomuser.me/api/portraits/women/11.jpg'
+author_image: 'https://avatars.githubusercontent.com/u/17203307?s=400&u=29c7f74b68ef437111374a453389066b910f91c8&v=4'
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->

@@ -5,7 +5,7 @@ excerpt: 'Django is a very powerful, high level Python framework for building we
 cover_image: '/images/posts/img3.jpg'
 category: 'Python'
 author: 'Sam Smith'
-author_image: 'https://randomuser.me/api/portraits/men/12.jpg'
+author_image: 'https://avatars.githubusercontent.com/u/17203307?s=400&u=29c7f74b68ef437111374a453389066b910f91c8&v=4'
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
