@@ -1,6 +1,6 @@
 ---
 title: 'Testing 1st Blog Update'
-date: 'May 5, 2021'
+date: 'September 2, 2021'
 excerpt: 'Testing plays a crucial role in software development,So in this article we will look at testing'
 cover_image: '/images/posts/img3.jpg'
 category: 'Python'
