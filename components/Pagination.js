@@ -21,7 +21,7 @@ export default function Pagination({ currentPage, numPages }) {
           </Link>
         )}
         {Array.from({ length: numPages }, (_, i) => (
-          <Link href={`/blog/page/${i + 1}`}>
+          <Link key={i} href={`/blog/page/${i + 1}`}>
             <li
               key={i}
               className='hover:bg-gray-300 p-1 px-2 

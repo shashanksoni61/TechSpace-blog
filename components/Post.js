@@ -6,7 +6,7 @@ export default function Post({ post }) {
   const { title, date, excerpt, cover_image, category, author, author_image } =
     post.frontMatter;
   return (
-    <div className='w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6'>
+    <div className='w-full py-4 px-4 bg-white rounded-lg shadow-md mt-6'>
       <Image
         src={cover_image}
         alt={title}
