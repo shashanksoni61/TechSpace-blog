@@ -4,11 +4,9 @@ date: 'May 8, 2021'
 excerpt: 'Crash course to learn the React. We will look at components, hooks and more'
 cover_image: '/images/posts/img5.jpg'
 category: 'JavaScript'
-author: 'Jane Doe'
-author_image: 'https://avatars.githubusercontent.com/u/17203307?s=400&u=29c7f74b68ef437111374a453389066b910f91c8&v=4'
+author: 'Shashank Soni'
+author_image: '/images/users/shashank.jpg'
 ---
-
-<!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
 haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter

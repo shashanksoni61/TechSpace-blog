@@ -4,16 +4,14 @@ date: 'May 5, 2021'
 excerpt: 'Both Tailwind and Bootstrap are very popular CSS frameworks. In this article, we will compare them'
 cover_image: '/images/posts/img2.jpg'
 category: 'CSS'
-author: 'Jane Doe'
-author_image: 'https://avatars.githubusercontent.com/u/17203307?s=400&u=29c7f74b68ef437111374a453389066b910f91c8&v=4'
+author: 'Shashank Soni'
+author_image: '/images/users/shashank.jpg'
 ---
-
-<!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
 haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
 manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
-verba caput ferarum _nubila_? Patriam Cyparisse tamen, **saxum** fide postponere
+verba caput ferarum _nubila_? Patriam Cyparisse tamen, fide postponere
 pavida ne omnes etiam, atque. Sonuit omina sed sine haerebat illic fit a mora
 in.
 

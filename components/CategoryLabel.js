@@ -7,6 +7,7 @@ export default function CategoryLabel({ label }) {
     Python: 'green',
     PHP: 'purple',
     Ruby: 'red',
+    React: 'blue',
   };
   return (
     <div

@@ -4,11 +4,9 @@ date: 'May 7, 2021'
 excerpt: 'In this review, we will be looking at the new Python book from Oriley'
 cover_image: '/images/posts/img6.jpg'
 category: 'Python'
-author: 'Mike Richards'
-author_image: 'https://avatars.githubusercontent.com/u/17203307?s=400&u=29c7f74b68ef437111374a453389066b910f91c8&v=4'
+author: 'Shashank Soni'
+author_image: '/images/users/shashank.jpg'
 ---
-
-<!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
 haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
@@ -30,10 +28,10 @@ consequitur et quoque scinditque in. Ratis laborum instabat quaedam partem
 Phoebus, manus _partibus poenas_. Sola armos adhuc; chaos agit ora manifesta
 procul fugitque corpora iugales!
 
-    var ethics_font_drive = cycleSystemProgram + deprecatedTransferIp.ide(3) /
-            rgb + nybbleBaseband;
-    permalinkCertificateMacintosh(ergonomicsIsdnDns);
-    boot = bridgeDaemonActive;
+```js
+var ethics_font_drive = cycleSyram + deprecarIp.ide(3) / rgb + tosh(ergonomi);
+boot = bridgeDaemonActive;
+```
 
 ## O contra diu
 

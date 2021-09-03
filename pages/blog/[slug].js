@@ -6,21 +6,22 @@ import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import Layout from '../../components/Layout';
 import CategoryLabel from '../../components/CategoryLabel';
-import { dark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 export default function SinglePostPage({ slug, frontMatter, content }) {
   const { title, date, category, cover_image, author, author_image } =
     frontMatter;
 
-  // const custromRenderer = {
-  //   code({ language, value }) {
-  //     return (
-  //       <SyntaxHighlighter style={dark} language={language}>
-  //         hello
-  //       </SyntaxHighlighter>
-  //     );
-  //   },
-  // };
+  const custromRenderer = {
+    code({ value }) {
+      return (
+        <SyntaxHighlighter style={atomDark} language='javascript'>
+          {value}
+        </SyntaxHighlighter>
+      );
+    },
+  };
 
   return (
     <Layout title={title}>
@@ -45,7 +46,7 @@ export default function SinglePostPage({ slug, frontMatter, content }) {
           />
         )}
 
-        <div className='flex justify-between items-center p-2 bg-gray-50 rounded-sm'>
+        <div className='flex justify-between items-center p-2 py-0 bg-gray-50 rounded-sm'>
           <div className='flex items-center my-2'>
             <img
               src={author_image}
@@ -58,7 +59,7 @@ export default function SinglePostPage({ slug, frontMatter, content }) {
         </div>
 
         <div className='blog-text'>
-          <ReactMarkdown>{content}</ReactMarkdown>
+          <ReactMarkdown renderers={custromRenderer}>{content}</ReactMarkdown>
         </div>
       </div>
     </Layout>

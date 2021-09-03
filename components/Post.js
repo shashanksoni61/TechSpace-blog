@@ -12,7 +12,7 @@ export default function Post({ post }) {
         alt={title}
         width={600}
         height={420}
-        className='mb-4 rounded'
+        className='mb-4 rounded bg-cover'
       />
       <div className='flex justify-between items-center mb-2'>
         <span className='font-light text-gray-600'>{date}</span>
@@ -38,7 +38,7 @@ export default function Post({ post }) {
           <img
             src={author_image}
             alt=''
-            className='w-10 h-10 object-cover hidden sm:block rounded-full'
+            className='w-10 h-10 object-cover rounded-full mr-2'
           />
           <h3 className='text-gray-700 font-bold'>{author}</h3>
         </div>

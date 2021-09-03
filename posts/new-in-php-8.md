@@ -4,8 +4,8 @@ date: 'May 7, 2021'
 excerpt: 'In this article we will look at some of the new features offered in version 8 of PHP'
 cover_image: '/images/posts/img4.jpg'
 category: 'PHP'
-author: 'Sara Johnson'
-author_image: 'https://avatars.githubusercontent.com/u/17203307?s=400&u=29c7f74b68ef437111374a453389066b910f91c8&v=4'
+author: 'Shashank Soni'
+author_image: '/images/users/shashank.jpg'
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->
