@@ -4,8 +4,8 @@ date: 'May 4, 2021'
 excerpt: 'We will look at 10 simple tips and tricks to increase the speed of your code when writing JS'
 cover_image: '/images/posts/img1.jpg'
 category: 'JavaScript'
-author: 'John Doe'
-author_image: 'https://avatars.githubusercontent.com/u/17203307?s=400&u=29c7f74b68ef437111374a453389066b910f91c8&v=4'
+author: 'Shashank Soni'
+author_image: '/images/users/shashank.jpg'
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->
